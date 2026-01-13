@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = Id
+        . = Class
+        : = Pseudo-classe
+        :: = Pseudo-Elementos
+        > = Elemento filho
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*Configuração acima define o estilo dos links, definindo uma cor nesse caso o  vermelho, retirando o sublinhado em seguida utilizando de text-decoration: none, e logo em seguida deixamos todos os links em negrito utilizando font-weight: bold*/
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        /*O código acima faz com que ao passarmos o mouse sobre o elemento, ocorra a alteração da cor e adição do sublinhado ao link*/
+
+        a:visited {
+            color: darkred;
+        }
+
+        /*O Código acima faz com que todo link que for visitado,automaticamente mude sua coloração para um vermelho mais escuro*/
+
+        a:active {
+            color: yellow;
+        }
+
+        /*O código acima indica que todo link que for ativado/clicado terá a coloração amarela no processo*/
+
+        .especial {
+            background-color: rgb(250, 140, 140);
+        }
+
+        .especial::before {
+            content: ' ⇒ ';
+        }
+
+        /* O código acima manipula o conteúdo periférico anterior ao elemento, onde o parâmetro content indica o conteúdo a ser exibido após o elemento*/
+
+        .especial::after {
+            content: ' ⇐ ';
+        }
+
+        /* O código acima manipula o conteúdo periférico posterior ao elemento, onde o parâmetro content indica o conteúdo a ser exibido após o elemento*/
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/LipeDevv-prog" class="especial">Github</a></li>
+        <li><a href="https://www.youtube.com/@LipeDev-s1d" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.instagram.com/lipe.devv/">Instagram</a></li>
+    </ul>
+</body>
+
+</html>
