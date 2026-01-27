@@ -39,11 +39,27 @@
         div#pos5 {
             background-position: center;
         }
+
+        div#auto {
+            height: 60vh;
+            background-position: left top;
+        }
+
+        div#contain {
+            height: 60vh;
+            background-position: center right;
+        }
+
+        div#cover {
+            height: 60vh;
+            background-position: bottom right;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Testando Posicionamento de imagens</h1>
+    <h1>Testando Conceitos</h1>
+    <h2>Background-position</h2>
     <div id="pos1">
         <h2>Ancoragem no canto superior esquerdo</h2>
     </div>
@@ -58,6 +74,17 @@
     </div>
     <div id="pos5">
         <h2>Ancoragem no ponto central</h2>
+    </div>
+    <h2>background-size</h2>
+    <div id="auto">
+        <h2>Mantém o tamanho original com posicionamento no canto superior esquerdo</h2>
+    </div>
+    <div id="contain">
+        <h2>Redimensiona a imagem fazendo cortes pontuais com posicionamento no centro direito</h2>
+    </div>
+    <div id="cover">
+        <h2>Redimensiona a imagem para que cubra todo o espaço do elemento com posicionamento no canto inferior direito
+        </h2>
     </div>
 </body>
 
