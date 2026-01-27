@@ -42,16 +42,19 @@
 
         div#auto {
             height: 60vh;
+            background-size: auto;
             background-position: left top;
         }
 
         div#contain {
             height: 60vh;
+            background-size: contain;
             background-position: center right;
         }
 
         div#cover {
             height: 60vh;
+            background-size: cover;
             background-position: bottom right;
         }
     </style>
@@ -80,7 +83,7 @@
         <h2>Mantém o tamanho original com posicionamento no canto superior esquerdo</h2>
     </div>
     <div id="contain">
-        <h2>Redimensiona a imagem fazendo cortes pontuais com posicionamento no centro direito</h2>
+        <h2>Mantém a proporção original da imagem sem cortes, com posicionamento no centro direito</h2>
     </div>
     <div id="cover">
         <h2>Redimensiona a imagem para que cubra todo o espaço do elemento com posicionamento no canto inferior direito
