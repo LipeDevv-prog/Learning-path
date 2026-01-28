@@ -79,7 +79,7 @@ Site institucional desenvolvido com foco em HTML5 Semântico, responsividade e b
 - [x] Fundamentos de HTML
 - [x] Fundamentos de CSS
 - [x] Introdução ao Git e GitHub
-- [ ] Layouts responsivos
+- [x] Layouts responsivos
 - [ ] JavaScript
 - [ ] Frameworks Front-end
 - [ ] Back-end
