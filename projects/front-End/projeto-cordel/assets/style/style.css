@@ -55,6 +55,7 @@ article {
     background: black url(../images/background001.jpg) center center / cover no-repeat fixed;
     height: 700px;
     color: white;
+    width: 100%;
 }
 
 #s2 {
@@ -64,7 +65,7 @@ article {
 #s2 p {
     position: absolute;
     top: 20px;
-    right: 163px;
+    right: 663px;
     background-color: rgba(0, 0, 0, 0.425);
     width: 600px;
 }
@@ -73,4 +74,5 @@ article {
     background: black url(../images/background002.jpg) center center / cover no-repeat fixed;
     height: 700px;
     color: white;
+    width: 100%;
 }
