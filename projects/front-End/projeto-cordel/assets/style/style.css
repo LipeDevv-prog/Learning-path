@@ -13,6 +13,7 @@
 
 body {
     min-height: 100vh;
+    text-align: left;
 }
 
 header {
@@ -37,6 +38,7 @@ header a {
 article {
     font-family: var(--fonte2);
     font-size: 47px;
+    line-height: 96px;
 }
 
 #s1 {
@@ -48,7 +50,8 @@ article {
     top: 20px;
     right: 663px;
     background-color: black;
-    width: 600px;
+    max-width: 400px;
+    height: 600px;
 }
 
 #img1 {
@@ -67,7 +70,8 @@ article {
     top: 20px;
     right: 663px;
     background-color: rgba(0, 0, 0, 0.425);
-    width: 600px;
+    height: 600px;
+    max-width: 400px;
 }
 
 #img2 {
