@@ -38,25 +38,16 @@ header a {
 article {
     font-family: var(--fonte2);
     font-size: 47px;
-    line-height: 96px;
+    line-height: 95.6px;
 }
 
 #s1 {
     position: relative;
 }
 
-#s1 p {
-    position: absolute;
-    top: 20px;
-    right: 663px;
-    background-color: black;
-    max-width: 400px;
-    height: 600px;
-}
-
 #img1 {
+    position: absolute;
     background: black url(../images/background001.jpg) center center / cover no-repeat fixed;
-    height: 700px;
     color: white;
     width: 100%;
 }
@@ -65,18 +56,24 @@ article {
     position: relative;
 }
 
-#s2 p {
-    position: absolute;
-    top: 20px;
-    right: 663px;
-    background-color: rgba(0, 0, 0, 0.425);
-    height: 600px;
-    max-width: 400px;
-}
-
 #img2 {
+    position: absolute;
     background: black url(../images/background002.jpg) center center / cover no-repeat fixed;
-    height: 700px;
     color: white;
     width: 100%;
+}
+
+p {
+    margin-left: 30px;
+    line-height: 95.6px;
+}
+
+p.estrofe {
+    background-color: black;
+    width: 550px ;
+}
+
+p.estrofe2 {
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 550px;
 }
