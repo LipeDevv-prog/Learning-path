@@ -8,9 +8,9 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
 }
 
+html,
 body {
     min-height: 100vh;
     text-align: left;
@@ -19,61 +19,66 @@ body {
 header {
     background-color: black;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+}
+
+header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding-bottom: 50px;
 }
 
 header h1 {
     font-family: var(--fonte1);
     font-weight: bold;
-    font-size: 136px;
+    font-size: 151px;
+    padding-top: 50px;
 }
 
-header a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
 article {
-    font-family: var(--fonte2);
-    font-size: 47px;
-    line-height: 95.6px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+.parallax {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
-#s1 {
-    position: relative;
+.parallax p {
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 580px;
+}
+
+p {
+    font-family: var(--fonte2);
+    font-size: 47px;
 }
 
 #img1 {
-    position: absolute;
     background: black url(../images/background001.jpg) center center / cover no-repeat fixed;
     color: white;
     width: 100%;
 }
 
-#s2 {
-    position: relative;
+#img1 p{
+    padding-left: 30px;
 }
 
 #img2 {
-    position: absolute;
     background: black url(../images/background002.jpg) center center / cover no-repeat fixed;
     color: white;
     width: 100%;
 }
 
-p {
-    margin-left: 30px;
-    line-height: 95.6px;
+#img2 p{
+    padding-left: 30px;
 }
 
-p.estrofe {
-    background-color: black;
-    width: 550px ;
-}
-
-p.estrofe2 {
-    background-color: rgba(0, 0, 0, 0.281);
-    width: 550px;
-}
