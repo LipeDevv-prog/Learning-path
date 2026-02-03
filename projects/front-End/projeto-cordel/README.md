@@ -1,31 +1,25 @@
 ---
-tags:
-  - projeto
-  - front-end
-  - estudo
-status: concluido
-stack:
-  - HTML
-  - CSS
-created: 2026-01-03
-updated: 2026-01-09
+tags: [projeto, front-end, estudo]
+status: parado
+stack: [HTML, CSS]
+created: 2026-02-02
+updated: 2026-02-02
 ---
-# 🚀 Projeto – Site Institucional – História e Curiosidades da Web
+# 🚀 Projeto – Projeto Cordel
 
 ## 🎯 Objetivo do Projeto
 
-> Criar uma página institucional responsiva, com foco em leitura agradável, conteúdo organizado e boa apresentação visual, utilizando HTML5 e CSS3.
+> O projeto utiliza-se como conteúdo um cordel, exigindo a aplicação de background-attachment para efeito parallax simples, além de conceitos semânticos e de estilização em CSS
 
 ---
 
 ## 🧠 Conceitos Aplicados
-
-- HTML Semântico
-- Hierarquia de títulos
-- Responsividade
+- HTML semântico
+- Organização de layout por seções
+- Tipografia com Google Fonts
+- Parallax simples com `background-attachment`
 - Variáveis CSS (`:root`)
-- Flexbox / Grid
-- Pseudo-classes e pseudo-elementos
+- Responsividade básica (sem media queries)
 
 ---
 
@@ -40,12 +34,12 @@ updated: 2026-01-09
 ## 📐 Estrutura do Projeto
 
 ```
-📦 Projeto - Site Institucional – História e Curiosidades da Web
+📦 projeto-cordel
  ┣ 📂 assets
- ┃ ┣ 📂 imagens
- ┃ ┗ 📂 fontes
+ ┃ ┣ 📂 images
+ ┃ ┗ 📂 style
+ ┃   ┗📜 style.css
  ┣ 📜 index.html
- ┣ 📜 style.css
  ┗ 📜 README.md
 ```
 
@@ -54,13 +48,13 @@ updated: 2026-01-09
 ## 📋 Checklist de Desenvolvimento (MVP)
 
 ### Estrutura
-- [ ] HTML base
-- [ ] Tags semânticas
-- [ ] SEO básico
+- [x] HTML base
+- [x] Tags semânticas
+- [x] SEO básico
 
 ### Estilo
-- [ ] Reset CSS
-- [ ] Variáveis globais
+- [x] Reset CSS
+- [x] Variáveis globais
 - [ ] Layout responsivo
 - [ ] Estados de interação
 
@@ -68,19 +62,29 @@ updated: 2026-01-09
 
 ## 🐛 Bugs & Soluções (Diário de Bordo)
 
-### 03/01/2026
-- **Erro:**
-- **Causa:**
-- **Solução:**
+### 31/01/2026
+- **Erro:** Estrofes separadas por parágrafos não exibiam corretamente
+- **Causa:** Utilização de `position: absolute;` no elemento p fazendo com que todos os parágrafos fossem sobrepostos um pelo outro
+- **Solução:** remoção de `position: absolute;`
+
+### 02/02/2026
+- **Erro:** Algumas estrofes não eram exibidas causando ausências
+- **Causa:** Utilização de `position: absolute;` nos id das imagens que recebem o efeito parallax, causando sobreposição dos parágrafos
+- **Solução:** remoção de `position: absolute;`
+
+### 03/02/2026
+- **Erro:** Rolagem lateral devido imagens estarem maior que o body
+- **Causa:** Uso de `width: 100%` o que fazia as imagens saírem um pouco pra fora da main
+- **Solução:** remoção de `width: 100%`
 
 ---
 
 ## 🧪 Testes Realizados
 
-- [ ] Desktop
+- [x] Desktop
 - [ ] Mobile
-- [ ] Chrome
-- [ ] Edge
+- [x] Chrome
+- [x] Edge
 
 ---
 
@@ -95,11 +99,13 @@ updated: 2026-01-09
 
 ## 📚 Aprendizados (Feynman)
 
-> Explique com suas próprias palavras o que você aprendeu neste projeto.
+>  O uso de `position: absolute` retira o elemento do fluxo normal do layout, o que pode causar sobreposição de conteúdos e desaparecimento visual de elementos subsequentes. Isso exige cuidado extremo e geralmente deve ser evitado para blocos de texto.
+>  
+>  O uso de `width: 100%` ou valores relacionados ao viewport pode gerar rolagem lateral quando combinado com `padding`, `margin` ou containers com largura limitada, sendo uma boa prática preferir `max-width` e centralização com margin automática.
 
 ---
 
 ## 🧭 Próximo Passo
 
-➡️ entregar para o chat gpt como se ele fosse o cliente. Que irá avaliar como um projeto real.
+➡️ Analisar diferenças do projeto do curso para a minha criação pessoal
 
