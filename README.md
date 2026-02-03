@@ -11,6 +11,7 @@ O objetivo é consolidar conhecimento, aplicar conceitos na prática e criar um 
 <ul>
     <li><a href="https://lipedevv-prog.github.io/projeto-site-android/">Projeto Site Android</a></li>
     <li><a href="https://lipedevv-prog.github.io/projeto-site-institucional-historia-e-curiosidades-da-web/">Projeto Site Institucional</a></li>
+    <li><a href="https://lipedevv-prog.github.io/projeto-cordel/">Projeto Site Cordel</a></li>
 </ul>
 
 ## 🧭 Objetivo do Repositório
