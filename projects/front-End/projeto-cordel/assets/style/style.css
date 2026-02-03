@@ -15,6 +15,8 @@ body {
     min-height: 100vh;
     text-align: left;
     background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
 
 header {
@@ -23,25 +25,32 @@ header {
     text-align: center;
 }
 
-header p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    padding-bottom: 50px;
-}
-
 header h1 {
     font-family: var(--fonte1);
     font-weight: bold;
-    font-size: 151px;
+    font-size: 10vw;
     padding-top: 50px;
+}
+
+header h1:hover {
+    color: gray;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+header p {
+    font-weight: bold;
+    padding-bottom: 50px;
 }
 
 article {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    line-height: 2em;
     padding-left: 30px;
     background-color: white;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
 }
 
 .parallax {
@@ -51,11 +60,14 @@ article {
 }
 
 .parallax p {
-    background-color: rgba(0, 0, 0, 0.342);
-    width: 580px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.199);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.39);
+    width: 50vw;
 }
 
-header a, footer a {
+header a,
+footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -63,9 +75,8 @@ header a, footer a {
     font-size: 1em;
 }
 
-p {
-    font-family: var(--fonte2);
-    font-size: 47px;
+header a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
 #img1 {
@@ -90,12 +101,9 @@ footer {
     background-color: black;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 100%;
 }
 
 footer>p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     font-size: 1em;
     text-align: center;
     color: white;
