@@ -14,6 +14,7 @@ html,
 body {
     min-height: 100vh;
     text-align: left;
+    background-color: darkgray;
 }
 
 header {
@@ -36,25 +37,30 @@ header h1 {
     padding-top: 50px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 article {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
+    background-color: white;
 }
+
 .parallax {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    background-color: white;
 }
 
 .parallax p {
     background-color: rgba(0, 0, 0, 0.342);
     width: 580px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
 
 p {
@@ -65,20 +71,32 @@ p {
 #img1 {
     background: black url(../images/background001.jpg) center center / cover no-repeat fixed;
     color: white;
-    width: 100%;
 }
 
-#img1 p{
+#img1 p {
     padding-left: 30px;
 }
 
 #img2 {
     background: black url(../images/background002.jpg) center center / cover no-repeat fixed;
     color: white;
-    width: 100%;
 }
 
-#img2 p{
+#img2 p {
     padding-left: 30px;
 }
 
+footer {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+footer>p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
