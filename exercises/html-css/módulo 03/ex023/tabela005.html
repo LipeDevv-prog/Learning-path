@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .nome{
+            background-color: green;
+            color: white;
+        }
+
+        .profissao{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastros</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td scope="col">Dante (Lipe Dev)</td>
+            <td scope="col">M</td>
+            <td scope="col">19 anos</td>
+            <td scope="col">Desenvolvedor Full-stack</td>
+        </tr>
+        <tr>
+            <td scope="col">SZ</td>
+            <td scope="col">M</td>
+            <td scope="col">N/I</td>
+            <td scope="col">Dono da Raikken</td>
+        </tr>
+        <tr>
+            <td scope="col" >Crippi</td>
+            <td scope="col">M</td>
+            <td scope="col">N/I</td>
+            <td scope="col">Estudante de Programação</td>
+        </tr>
+    </table>
+</body>
+</html>
